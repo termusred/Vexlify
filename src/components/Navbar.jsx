@@ -2,6 +2,8 @@ import styled from "styled-components"
 import {Link} from "react-router-dom"
 
 const Navbar = styled("nav")`
+    position: sticky;
+    left: 0;
     min-width: 18vw;
     height: 100%;
 `
@@ -10,7 +12,6 @@ const Menu = styled("div")`
     flex-direction: column;
     width: 100%;
     height: 24%;
-    background-color: black;
 `
 const Library = styled("div")`
     display: flex;
@@ -18,7 +19,6 @@ const Library = styled("div")`
     width: 100%;
     margin-top: 3rem;
     height: 30%;
-    background-color: black;
 `
 const General = styled("div")`
     display: flex;
@@ -26,7 +26,6 @@ const General = styled("div")`
     width: 100%;
     margin-top: 3rem;
     height: 24%;
-    background-color: black;
 `
 const NavText = styled("h5")`
     gap: 1rem;
@@ -41,7 +40,7 @@ const NavText = styled("h5")`
         &:hover{
             transition: all 80ms;
             scale: 1.07;
-            color: #00B9AE;
+            color: #A7F2BA;
         }
     }
 `
@@ -54,7 +53,7 @@ const LogoContainer = styled("div")`
     height: 8rem;
 `
 const Logo = styled("h1")`
-    color: white;
+    color: #2BD9A8;
     font-family: sans-serif;
     cursor: default;
 `
