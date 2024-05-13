@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 const Container = styled("div") `
     display: flex;
@@ -136,17 +138,37 @@ const CardContainer = styled.div`
     overflow: scroll;
     width: 100%;
 `
+const ModalImage = styled.img`
+
+`
 const Section = ({data}) => {
     const [show, setShow] = useState(false);
+    const [Content , setContent] = useState([])
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = (a , b) => {
+        setShow(true);
+        setContent([a , b])
+    }
     return(
         <Container>
             <SectionNavbar> 
                 <NavCon>
-                    <NavText>Movies</NavText>
-                    <NavText>TV shows</NavText>
-                    <NavText>Anime</NavText>
+                    <Tabs
+                        defaultActiveKey="home"
+                        transition={false}
+                        id="noanim-tab-example"
+                        className="mb-3"
+                    >
+                        <Tab eventKey="home" title="Movies">
+                            
+                        </Tab>
+                        <Tab eventKey="profile" title="TV shows">
+                        
+                        </Tab>
+                        <Tab eventKey="contact" title="Anime">
+
+                        </Tab>
+                    </Tabs>
                     <InputHolder>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -218,7 +240,7 @@ const Section = ({data}) => {
                                         </svg>
                                     </Card.Text>
                                     
-                                    <Button variant="primary" onClick={handleShow}>More info</Button>
+                                    <Button variant="success" onClick={() => handleShow(el.title , el.backdropPath)}>More info</Button>
                                 </Card.Body>
                             </Card>
                         )
@@ -226,15 +248,17 @@ const Section = ({data}) => {
                     
                 </CardContainer>
 
-                <Modal show={show} onHide={handleClose} size={"xl"} style={{backgroundColor:"#0d0d0d"}}>
+                <Modal show={show} onHide={handleClose} size={"xl"} style={{ backdropFilter: "blur(5px)" }}>
                     <Modal.Header closeButton>
-                    <Modal.Title></Modal.Title>
+                    <Modal.Title>{Content[0]}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                    <Modal.Body>
+                        <ModalImage src={`${Content[1]}`}/>
+                    </Modal.Body>
                     <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
                     </Modal.Footer>
                 </Modal>
             </Popular>

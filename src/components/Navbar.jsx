@@ -29,7 +29,7 @@ const General = styled("div")`
 `
 const NavText = styled("h5")`
     gap: 1rem;
-    width: 100%;
+    width: fit-content;
     color: white;
     .NavLink {
         display: flex;
