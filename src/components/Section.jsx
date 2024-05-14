@@ -10,11 +10,11 @@ import Tabs from 'react-bootstrap/Tabs';
 const Container = styled("div") `
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    padding-top: 1rem;
     gap: 1rem;
     align-items: center;
     width: 60%;
-
+    background-color: ${({theme}) => theme.Section.backgroundColor};
 `
 const Title = styled("h2")` 
     cursor: default;
@@ -76,7 +76,7 @@ const AnimeFirst = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpe");
+    background-image: url();
 `
 const AnimeSecond = styled.div`
     display: flex;
@@ -85,7 +85,7 @@ const AnimeSecond = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("https://staticg.sportskeeda.com/editor/2023/08/63291-16913969569317-1920.jpg");
+    background-image: url();
 `
 const AnimeThird = styled.div`
     display: flex;
@@ -94,7 +94,7 @@ const AnimeThird = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("https://sub.yuu.space/wp-content/uploads/2017/11/171106_1528_deathnote.jpg");
+    background-image: url();
 `
 const FirstImage = styled.div`
     display: flex;

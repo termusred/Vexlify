@@ -8,7 +8,8 @@ const Container = styled("div")`
     display: flex;
     justify-content: space-between;
     width: 25%;
-    height: 100vh;
+    padding-top: 1rem;
+    background-color: ${({theme}) => theme.ShortCut.backgroundColor};
 `
 const BellContainer = styled.div`
     display: flex;
