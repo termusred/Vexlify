@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 const Navbar = styled("nav")`
     position: sticky;
     left: 0;
+    top: 0;
     min-width: 18vw;
     height: 100%;
 `
