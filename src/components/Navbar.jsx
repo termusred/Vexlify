@@ -32,13 +32,12 @@ const General = styled("div")`
 const NavText = styled("h5")`
   gap: 1rem;
   width: fit-content;
-  color: white;
   .NavLink {
     display: flex;
+    color: ${({ theme }) => theme.Colors.primary};
     gap: 8px;
     align-items: center;
     text-decoration: none;
-    color: white;
     &:hover {
       transition: all 80ms;
       scale: 1.07;
@@ -65,7 +64,7 @@ const Title = styled("h4")`
   cursor: default;
   height: fit-content;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.Colors.primary};
   /* &:hover{
         color: #00B9AE;
     } */

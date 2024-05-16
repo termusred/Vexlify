@@ -3,6 +3,7 @@ import Section from "./components/Section"
 import {Route , Routes} from "react-router-dom"
 import ShortCut from "./components/ShortCut"
 import styled from "styled-components"
+import GlobalStyle from "./globalStyles"
 import axios from "axios"
 import {useState ,useEffect } from "react"
 
@@ -16,8 +17,8 @@ function App() {
   } , [])
   return (
     <AppCon>
+      <GlobalStyle/>
       <Nav/>
-
       <Routes>
         <Route path="/" element={<><Section data={data}/> <ShortCut/></>}/>
       </Routes>

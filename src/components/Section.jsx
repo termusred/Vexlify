@@ -76,7 +76,7 @@ const AnimeFirst = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url();
+    background-image: url(${ ({theme}) => theme.Banner.Anime.Fimage});
 `
 const AnimeSecond = styled.div`
     display: flex;
@@ -85,7 +85,7 @@ const AnimeSecond = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url();
+    background-image: url(${ ({theme}) => theme.Banner.Anime.Simage});
 `
 const AnimeThird = styled.div`
     display: flex;
@@ -94,7 +94,7 @@ const AnimeThird = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url();
+    background-image: url(${ ({theme}) => theme.Banner.Anime.Timage});
 `
 const FirstImage = styled.div`
     display: flex;
@@ -103,7 +103,7 @@ const FirstImage = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUAioxWLTjxlu0S26gYNm4oDYcbDbYj9PdgRNmPknAn2X6iFLh55btyMsTzvAAk_ht32WfeAq_WYnvbpsErzwF7VQhTRxukbzhHF.jpg?r=ae3");
+    background-image: url(${ ({theme}) => theme.Banner.Tv.Fimage});
 `
 const SecondImage = styled.div`
     display: flex;
@@ -112,7 +112,7 @@ const SecondImage = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("https://rukminim2.flixcart.com/image/850/1000/j13vqfk0/poster/c/z/q/medium-andbltvs408-ananyadesigns-tv-show-lost-hd-wall-poster-original-imaek7y6bkkqgdfj.jpeg?q=90&crop=false");
+    background-image: url(${ ({theme}) => theme.Banner.Tv.Simage});
 `
 const ThirdImage = styled.div`
     display: flex;
@@ -121,7 +121,7 @@ const ThirdImage = styled.div`
     height: 25rem;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("https://www.wallpaperflare.com/static/663/960/1016/game-of-thrones-game-thrones-poster-wallpaper.jpg");
+    background-image: url(${ ({theme}) => theme.Banner.Tv.Timage});
 `
 const AddToWatchlist = styled.button`
     padding: 1rem;
