@@ -17,12 +17,14 @@ const BellContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    color: ${({theme}) => theme.ShortCut.color};
     width: 10rem;
     height: 5rem;
     `
 const AccountContainer = styled.div`
     display: flex;
     align-items: center;
+    color: ${({theme}) => theme.ShortCut.color};
     text-align: center;
     justify-content: center;
     flex-direction: row;
@@ -33,6 +35,7 @@ const IconContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    color: ${({theme}) => theme.ShortCut.color};
     border-radius: 1rem;
     background-color: ${({theme}) => theme.ShortCut.Icon};
     width: 4rem;
@@ -41,6 +44,7 @@ const IconContainer = styled.div`
 const UserName = styled.p`
     margin-top: 1rem;
     margin-right: 1rem;
+    color: ${({theme}) => theme.ShortCut.color};
     cursor: default;
     &:hover{
         color: ${({theme}) => theme.Colors.hover};
@@ -49,6 +53,16 @@ const UserName = styled.p`
 const Ablosute = styled.div `
     position: absolute;
     top: 5rem;
+`
+const Switch = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+    width: 5rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: 0px;
 `
 const ShortCut = () => {
     const [showA, setShowA] = useState(false);
@@ -66,27 +80,32 @@ const ShortCut = () => {
                 <Ablosute>
                     <Col md={6} className="mb-2">
                         <Toast show={showA} onClose={toggleShowA}>
-                        <Toast.Body style={{backgroundColor:"#302D40"}}>Rick and Morty got new episode! <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
+                        <Toast.Body style={{backgroundColor:`${({theme}) => theme.Colors.Con}`}}>Rick and Morty got new episode! <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
                         </Toast>
                     </Col>
                     <Col md={6} className="mb-2">
                         <Toast show={showA} onClose={toggleShowA}>
-                        <Toast.Body style={{backgroundColor:"#302D40"}}>Star Wars got new movie titled: "Star wars: Palpatine strickes back"  <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
+                        <Toast.Body style={{backgroundColor:`${({theme}) => theme.Colors.Con}`}}>Star Wars got new movie titled: "Star wars: Palpatine strickes back"  <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
                         </Toast>
                     </Col>
                     <Col md={6} className="mb-2">
                         <Toast show={showA} onClose={toggleShowA}>
-                        <Toast.Body style={{backgroundColor:"#302D40"}}>New movie from Torantino your favorite  <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
+                        <Toast.Body style={{backgroundColor:`${({theme}) => theme.Colors.Con}`}}>New movie from Torantino your favorite  <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
                         </Toast>
                     </Col>
                     <Col md={6} className="mb-2">
                         <Toast show={showA} onClose={toggleShowA}>
-                        <Toast.Body style={{backgroundColor:"#302D40"}}>Mrbeast played in new movie   <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
+                        <Toast.Body style={{backgroundColor:`${({theme}) => theme.Colors.Con}`}}>Mrbeast played in new movie   <Button style={{backgroundColor:"#0F4037", border:"0px"}} href="https://youtu.be/dQw4w9WgXcQ?si=_05IrFJaLiSbmtuV">Watch</Button></Toast.Body>
                         </Toast>
                     </Col>
                 
                 </Ablosute>
             </BellContainer>
+            <Switch>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            </Switch>
             <AccountContainer>
                 <UserName>Termusred</UserName>
                 <IconContainer>

@@ -101,7 +101,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Discover"} className="NavLink">
+            <Link to={"/discover"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -116,7 +116,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Awards"} className="NavLink">
+            <Link to={"/awards"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -131,7 +131,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Celebs"} className="NavLink">
+            <Link to={"/celebs"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -150,7 +150,7 @@ const Nav = () => {
         <Title>Library</Title>
         <Container>
           <NavText>
-            <Link to={"/Recent"} className="NavLink">
+            <Link to={"/recent"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -165,7 +165,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/TopRated"} className="NavLink">
+            <Link to={"/topRated"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -179,7 +179,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Downloaded"} className="NavLink">
+            <Link to={"/downloaded"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -194,7 +194,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Watchlist"} className="NavLink">
+            <Link to={"/watchlist"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -209,7 +209,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Comleated"} className="NavLink">
+            <Link to={"/comleated"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -229,7 +229,7 @@ const Nav = () => {
         <Title>General</Title>
         <Container>
           <NavText>
-            <Link to={"/Settings"} className="NavLink">
+            <Link to={"/settings"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -244,7 +244,7 @@ const Nav = () => {
             </Link>
           </NavText>
           <NavText>
-            <Link to={"/Settings"} className="NavLink">
+            <Link to={"/logout"} className="NavLink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

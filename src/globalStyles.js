@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     p{
-      color: ${({theme}) => theme.Colors.primary};
+      color: ${({theme}) => theme.Colors.Card};
     }
     ::-webkit-scrollbar{
       background-color: ${({theme}) => theme.Colors.scrollBar};
@@ -17,6 +17,13 @@ const GlobalStyle = createGlobalStyle`
     }
     ::-webkit-scrollbar-thumb{
       background-color: #0F4037;
+    }
+    .nav-tabs{
+      border-radius: ${({theme}) => theme.border.primary};
+      background-color: ${({theme}) => theme.Colors.NavLink};
+    }
+    .nav-link{
+      color: black;
     }
 `;
  

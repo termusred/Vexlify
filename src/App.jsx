@@ -5,6 +5,7 @@ import ShortCut from "./components/ShortCut"
 import styled from "styled-components"
 import GlobalStyle from "./globalStyles"
 import axios from "axios"
+import NotFound from "./components/NotFound"
 import {useState ,useEffect } from "react"
 
 const AppCon = styled("div")`
@@ -12,6 +13,7 @@ const AppCon = styled("div")`
 `
 function App() {
   const [data , setData] = useState([""])
+
   useEffect(()=>{
     axios.get("https://jk-tv.netlify.app/popular_movies/get_all").then((data) => setData(data.data))
   } , [])
@@ -21,7 +23,8 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<><Section data={data}/> <ShortCut/></>}/>
-      </Routes>
+        <Route path="*" element={<NotFound/>}/>
+      </Routes> 
     </AppCon>
   )
 }
