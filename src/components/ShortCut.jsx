@@ -9,8 +9,9 @@ const Container = styled("div")`
     justify-content: space-between;
     width: 25%;
     padding-top: 1rem;
+    color: ${({theme}) => theme.ShortCut.color};
     background-color: ${({theme}) => theme.ShortCut.backgroundColor};
-`
+    `
 const BellContainer = styled.div`
     display: flex;
     align-items: center;
@@ -18,7 +19,7 @@ const BellContainer = styled.div`
     flex-direction: row;
     width: 10rem;
     height: 5rem;
-`
+    `
 const AccountContainer = styled.div`
     display: flex;
     align-items: center;
@@ -27,22 +28,22 @@ const AccountContainer = styled.div`
     flex-direction: row;
     width: 14rem;
     height: 5rem;
-`
+    `
 const IconContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+    background-color: ${({theme}) => theme.ShortCut.Icon};
     width: 4rem;
     height: 4rem;
-    background-color: #302D40;
 `
 const UserName = styled.p`
     margin-top: 1rem;
     margin-right: 1rem;
     cursor: default;
     &:hover{
-        color: #A7F2BA;
+        color: ${({theme}) => theme.Colors.hover};
     }
 `
 const Ablosute = styled.div `

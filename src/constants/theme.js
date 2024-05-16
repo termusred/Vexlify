@@ -7,7 +7,9 @@ export const DarkTheme = {
     backgroundColor:"#0D0D0D"
   },
   ShortCut:{
-    backgroundColor:"#0D0D0D"
+    color:"white",
+    backgroundColor:"#0D0D0D",
+    Icon:"#302D40"
   },
   border: {
     primary: "8px",
@@ -32,8 +34,9 @@ export const DarkTheme = {
   },
   Colors:{
     primary:"white",
-    secondary:"#0d0d0d",
-    svg:"white"
+    secondary:"white",
+    scrollBar:"#0d0d0d",
+    hover:"#A7F2BA",
   },
   
 };
@@ -47,7 +50,9 @@ export const LightTheme = {
     backgroundColor:"white"
   },
   ShortCut:{
-    backgroundColor:"white"
+    color:"black",
+    backgroundColor:"bisque",
+    Icon:"#302D40"
   },
   border: {
     primary: "8px",
@@ -74,6 +79,6 @@ export const LightTheme = {
     primary:"black",
     secondary:"bisque",
     scrollBar:"white",
-    svg:"black"
+    hover:"orange"
   },
 };

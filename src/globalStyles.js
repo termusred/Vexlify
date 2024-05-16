@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
       padding: 0px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    p{
+      color: ${({theme}) => theme.Colors.primary};
+    }
     ::-webkit-scrollbar{
       background-color: ${({theme}) => theme.Colors.scrollBar};
     }

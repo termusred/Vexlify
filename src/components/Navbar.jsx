@@ -41,7 +41,7 @@ const NavText = styled("h5")`
     &:hover {
       transition: all 80ms;
       scale: 1.07;
-      color: #a7f2ba;
+      color: ${({theme}) => theme.Colors.hover};
     }
   }
 `;
