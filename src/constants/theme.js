@@ -1,4 +1,3 @@
-import NotFound from "../components/NotFound";
 
 export const DarkTheme = {
   sideMenu: {
@@ -40,7 +39,7 @@ export const DarkTheme = {
     scrollBar:"#0d0d0d",
     hover:"#A7F2BA",
     Card:"white",
-    NavLink:"#A7F2BA"
+    NavLink:"#A7F2BA",
   },
   Not:{
     backgroundColor:"#0d0d0d"
