@@ -10,6 +10,7 @@ const Container = styled.div`
     background-color: ${({theme}) => theme.Not.backgroundColor};
 `
 const Text = styled.h1`
+    cursor: default;
     color: ${({theme}) => theme.Colors.primary};
 `
 const Img = styled.div`

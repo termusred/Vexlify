@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Navbar = styled("nav")`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   position: sticky;
   left: 0;
   top: 0;
@@ -19,14 +22,12 @@ const Library = styled("div")`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 3rem;
   height: 30%;
 `;
 const General = styled("div")`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 3rem;
   height: 24%;
 `;
 const NavText = styled("h5")`
