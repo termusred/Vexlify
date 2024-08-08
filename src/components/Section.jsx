@@ -33,7 +33,7 @@ const Input = styled.input `
     border-radius: 3px;
     background-color: #3b3b3b;
 `
-const InputHolder = styled.div`
+const InputHolder = styled.form`
     display: flex;
     justify-content: center;
     height: 3rem;
@@ -182,9 +182,15 @@ const Section = ({data}) => {
         setShow(true);
         setContent([a , b])
     }
+    function Load(){
+        alert("Can't search for now")
+    }
     return(
         <Container>
-            <InputHolder>
+            <InputHolder onSubmit={(e) => {
+                e.preventDefault()
+                Load()
+            }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                 </svg>
@@ -268,7 +274,7 @@ const Section = ({data}) => {
                     
                 </CardContainer>
 
-                <Modal show={show} onHide={handleClose} size={"xl"} style={{ backdropFilter: "blur(5px)" }}>
+                <Modal show={show} onHide={handleClose} size={"xl"} style={{ backdropFilter: "blur(5px)" , transition: "none" }}>
                     <Modal.Header closeButton>
                     <Modal.Title>{Content[0]}</Modal.Title>
                     </Modal.Header>

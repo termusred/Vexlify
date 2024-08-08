@@ -14,7 +14,7 @@ const AppCon = styled("div")`
   display: flex;
 `
 function App() {
-  const [Theme , setTheme] = useState("light")
+  const [Theme , setTheme] = useState("dark")
   const [data , setData] = useState([""])
 
   useEffect(()=>{
